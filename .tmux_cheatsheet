@@ -1,0 +1,39 @@
+#Este es el torpedo (Chuleta,Ayuda Memoria, ...) de tmux
+
+Work In Progress CTM!!!
+# 🖥️ Gestión de Sesiones en tmux
+tmux new -s <nombre>       # Crear una nueva sesión
+tmux ls                    # Listar sesiones activas
+tmux attach -t <nombre>     # Conectar a una sesión existente
+tmux detach                 # Desconectarse de la sesión actual (Ctrl + a luego d)
+tmux kill-session -t <nombre> # Cerrar una sesión específica
+tmux kill-server            # Cerrar todas las sesiones de tmux
+
+# 🔳 Manejo de Ventanas
+Ctrl + a c                 # Crear una nueva ventana
+Ctrl + a w                 # Listar todas las ventanas
+Ctrl + a 1, 2, 3...        # Cambiar a una ventana específica
+Ctrl + a n                 # Siguiente ventana
+Ctrl + a p                 # Ventana anterior
+Ctrl + a ,                 # Renombrar ventana
+Ctrl + a &                 # Cerrar ventana actual
+
+# 🖼️ Manejo de Paneles (Splits)
+Ctrl + a "                 # Dividir en panel horizontal
+Ctrl + a %                 # Dividir en panel vertical
+Ctrl + a o                 # Moverse entre paneles
+Ctrl + a q                 # Mostrar números de paneles
+Ctrl + a x                 # Cerrar panel actual
+Ctrl + a Alt + flechas     # Redimensionar paneles
+
+# 🖱️ Habilitar Scroll con el Mouse
+Ctrl + a [                 # Modo de desplazamiento manual
+Ctrl + a ]                 # Pegar texto copiado
+set -g mouse on            # Habilitar soporte de mouse en ~/.tmux.conf
+
+# 🔍 Otras Acciones Útiles
+Ctrl + a d                 # Separar sesión (detach)
+Ctrl + a :                 # Entrar a modo de comandos
+Ctrl + a r                 # Recargar configuración ~/.tmux.conf
+Ctrl + a t                 # Mostrar reloj en pantalla
+Ctrl + a ?                 # Mostrar ayuda de tmux
